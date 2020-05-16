@@ -275,6 +275,61 @@ if exists('*term_setansicolors')
 endif
 
 " ----------------------------------------------------------------------------
+" Language go:
+" ----------------------------------------------------------------------------
+function TweakSyntaxGo()
+  " for go:generate in comments
+  call s:HL('PreProc', s:darkaqua, s:none, s:none)
+
+  " escape sequences, formatting options
+  call s:HL('Special', s:lightred, s:none, s:none)
+
+  call s:HL('Type', s:aqua, s:none, s:none)
+  call s:HL('Operator', s:yellow, s:none, s:none)
+endfunction
+
+autocmd Syntax go call TweakSyntaxGo()
+
+" ----------------------------------------------------------------------------
+" Language c++:
+" ----------------------------------------------------------------------------
+function TweakSyntaxCpp()
+  call s:HL('Type', s:aqua, s:none, s:none)
+  call s:HL('PreProc', s:darkaqua, s:none, s:none)
+  call s:HL('Character', s:lightgreen, s:none, s:none)
+  call s:HL('Number', s:red, s:none, s:none)
+  call s:HL('Float', s:red, s:none, s:none)
+  call s:HL('Boolean', s:red, s:none, s:none)
+  call s:HL('Keyword', s:blue, s:none, s:none)
+  call s:HL('Conditional', s:blue, s:none, s:none)
+  call s:HL('Operator', s:yellow, s:none, s:none)
+  "
+  call s:HL('Parens', s:purple, s:none, s:none)
+  call s:HL('Semicolon', s:darkblue, s:none, s:none)
+endfunction
+
+autocmd Syntax cpp call TweakSyntaxCpp()
+
+" ----------------------------------------------------------------------------
+" Language ruby:
+" ----------------------------------------------------------------------------
+function TweakSyntaxRuby()
+  call s:HL('Number', s:purple, s:none, s:none)
+  call s:HL('Boolean', s:purple, s:none, s:none)
+endfunction
+
+autocmd Syntax ruby call TweakSyntaxRuby()
+
+" ----------------------------------------------------------------------------
+" Language elixir:
+" ----------------------------------------------------------------------------
+function TweakSyntaxElixir()
+  call s:HL('Number', s:red, s:none, s:none)
+  call s:HL('Constant', s:purple, s:none, s:none)
+endfunction
+
+autocmd Syntax elixir call TweakSyntaxElixir()
+" ----------------------------------------------------------------------------
 " License:
 " ----------------------------------------------------------------------------
 
