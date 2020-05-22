@@ -278,12 +278,12 @@ endif
 " Language go:
 " ----------------------------------------------------------------------------
 function TweakSyntaxGo()
-" for go:generate in comments
 call s:HL('PreProc', s:darkaqua, s:none, s:none)
+call s:HL('goBuildKeyword', s:darkaqua, s:none, s:none)
+call s:HL('goBuildCommentStart', s:darkaqua, s:none, s:none)
 
 " escape sequences, formatting options
 call s:HL('Special', s:lightred, s:none, s:none)
-
 call s:HL('Type', s:aqua, s:none, s:none)
 call s:HL('Operator', s:yellow, s:none, s:none)
 endfunction
@@ -340,7 +340,19 @@ autocmd Syntax ruby call TweakSyntaxRuby()
 " ----------------------------------------------------------------------------
 function TweakSyntaxElixir()
 call s:HL('Number', s:red, s:none, s:none)
-call s:HL('Constant', s:purple, s:none, s:none)
+call s:HL('String', s:green, s:none, s:none)
+call s:HL('Type', s:purple, s:none, s:none)
+call s:HL('Atom', s:purple, s:none, s:none)
+call s:HL('Constant', s:yellow, s:none, s:none)
+call s:HL('Function', s:purple, s:none, s:none)
+call s:HL('Operator', s:lightred, s:none, s:none)
+call s:HL('Boolean', s:red, s:none, s:none)
+call s:HL('Identifier', s:blue, s:none, s:none)
+call s:HL('elixirDeclaration', s:aqua, s:none, s:none)
+call s:HL('elixirStructDelimiter', s:aqua, s:none, s:none)
+call s:HL('elixirSpecial', s:aqua, s:none, s:none)
+call s:HL('elixirDocTest', s:darkaqua, s:none, s:none)
+
 endfunction
 autocmd Syntax elixir call TweakSyntaxElixir()
 " ----------------------------------------------------------------------------
