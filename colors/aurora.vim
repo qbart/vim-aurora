@@ -65,6 +65,9 @@ let s:lightpurple  = "#d8d1ff"
 
 let s:none = "NONE"
 
+let s:teal = "#2e6b6f"
+let s:darkteal = "#103F43"
+
 " ----------------------------------------------------------------------------
 " Formatters:
 " ----------------------------------------------------------------------------
@@ -306,6 +309,7 @@ call s:HL('Parens', s:purple, s:none, s:none)
 call s:HL('Semicolon', s:darkblue, s:none, s:none)
 endfunction
 autocmd Syntax cpp call TweakSyntaxCpp()
+autocmd Syntax c call TweakSyntaxCpp()
 " ----------------------------------------------------------------------------
 " Language ruby:
 " ----------------------------------------------------------------------------
