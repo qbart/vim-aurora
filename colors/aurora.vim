@@ -143,7 +143,9 @@ call s:HL('SignColumn', s:none, s:none, s:none)
 
 call s:HL('LineNr', s:accent_4, s:none, s:none)
 call s:HL('CursorLineNr', s:yellow, s:none, s:none)
-call s:HL('MatchParen', s:accent_2, s:purple, s:none)
+" ORIGINAL call s:HL('MatchParen', s:accent_2, s:purple, s:none)
+" FIX: https://github.com/crusoexia/vim-monokai/issues/17
+call s:HL('MatchParen', s:red, s:accent_2, s:none)
 call s:HL('ModeMsg', s:green, s:none, s:none)
 call s:HL('MoreMsg', s:green, s:none, s:none)
 call s:HL('NonText', s:accent_4, s:none, s:none)
