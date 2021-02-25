@@ -292,7 +292,7 @@ call s:HL('Special', s:lightred, s:none, s:none)
 call s:HL('Type', s:aqua, s:none, s:none)
 call s:HL('Operator', s:yellow, s:none, s:none)
 endfunction
-autocmd Syntax go call TweakSyntaxGo()
+autocmd FileType go call TweakSyntaxGo()
 " ----------------------------------------------------------------------------
 " Language c++:
 " ----------------------------------------------------------------------------
@@ -310,8 +310,8 @@ call s:HL('Operator', s:yellow, s:none, s:none)
 call s:HL('Parens', s:purple, s:none, s:none)
 call s:HL('Semicolon', s:darkblue, s:none, s:none)
 endfunction
-autocmd Syntax cpp call TweakSyntaxCpp()
-autocmd Syntax c call TweakSyntaxCpp()
+autocmd FileType cpp call TweakSyntaxCpp()
+autocmd FileType c call TweakSyntaxCpp()
 " ----------------------------------------------------------------------------
 " Language ruby:
 " ----------------------------------------------------------------------------
@@ -339,7 +339,7 @@ call s:HL('rubyOperator', s:lightyellow, s:none, s:none)
 call s:HL('rubyPseudoOperator', s:lightyellow, s:none, s:none)
 call s:HL('rubyAccess', s:red, s:none, s:bold)
 endfunction
-autocmd Syntax ruby call TweakSyntaxRuby()
+autocmd FileType ruby call TweakSyntaxRuby()
 
 " ----------------------------------------------------------------------------
 " Language elixir:
@@ -360,7 +360,7 @@ call s:HL('elixirSpecial', s:aqua, s:none, s:none)
 call s:HL('elixirDocTest', s:darkaqua, s:none, s:none)
 
 endfunction
-autocmd Syntax elixir call TweakSyntaxElixir()
+autocmd FileType elixir call TweakSyntaxElixir()
 " ----------------------------------------------------------------------------
 " License:
 " ----------------------------------------------------------------------------
