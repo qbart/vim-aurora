@@ -283,14 +283,19 @@ endif
 " Language go:
 " ----------------------------------------------------------------------------
 function TweakSyntaxGo()
+
 call s:HL('PreProc', s:darkaqua, s:none, s:none)
+call s:HL('Statement', s:blue, s:none, s:none)
+call s:HL('Identifier', s:aqua, s:none, s:none)
+call s:HL('Special', s:lightred, s:none, s:none) " escape sequences, formatting options
+call s:HL('Type', s:aqua, s:none, s:none)
+
 call s:HL('goBuildKeyword', s:darkaqua, s:none, s:none)
 call s:HL('goBuildCommentStart', s:darkaqua, s:none, s:none)
-
-" escape sequences, formatting options
-call s:HL('Special', s:lightred, s:none, s:none)
-call s:HL('Type', s:aqua, s:none, s:none)
-call s:HL('Operator', s:yellow, s:none, s:none)
+call s:HL('goOperator', s:yellow, s:none, s:none)
+call s:HL('goParens', s:purple, s:none, s:none)
+call s:HL('goRawString', s:green, s:none, s:none)
+call s:HL('goString', s:green, s:none, s:none)
 endfunction
 autocmd FileType go call TweakSyntaxGo()
 " ----------------------------------------------------------------------------
