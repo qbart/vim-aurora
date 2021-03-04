@@ -44,7 +44,8 @@ let s:orange       = '#ff9326'
 let s:yellow       = '#ffcb65'
 let s:green        = '#9ceb4f'
 let s:aqua         = '#18ffe0'
-let s:blue         = '#31baff'
+" let s:blue         = '#31baff'
+let s:blue         = '#08A191'
 let s:purple       = '#9d8cff'
 
 let s:darkred      = "#661a1a"
